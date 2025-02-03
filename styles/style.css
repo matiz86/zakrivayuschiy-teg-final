@@ -18,22 +18,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--main-font-weight);
-  background-image: repeating-linear-gradient(
-      to bottom,
-      var(--bg-color) 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      to right,
-      var(--bg-color) 0 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      180deg,
-      var(--linear-gradient-first) 0%,
-      var(--linear-gradient-second) 100%
-    );
+  font-variation-settings: 'wght' var(--main-font-weight);
+  background-image: repeating-linear-gradient(to bottom, var(--bg-color) 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to right, var(--bg-color) 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, var(--linear-gradient-first) 0%, var(--linear-gradient-second) 100%);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -87,10 +75,11 @@
   font-family: var(--main-font), sans-serif;
   border: 2px solid var(--border-color);
   font-size: 18px;
-  font-variation-settings: var(--heading-font-weight);
+  font-weight: var(--header-weight);
   line-height: normal;
   font-style: normal;
   padding: 5px 22px 5px 8px;
+  font-variation-settings: var(--heading-font-weight);
 }
 
 .card__image {
@@ -145,8 +134,7 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   color: var(--accent-color);
-  text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color),
-    0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
+  text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color), 0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
 }
 @supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
   .card__image-label {
@@ -183,7 +171,7 @@
   font-size: 18px;
   line-height: 21px;
   font-weight: var(--text-weight);
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: 'wght' var(--text-weight);
 }
 
 .card__content-text:nth-child(1) {
@@ -217,7 +205,7 @@
 }
 
 .card__like-button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -233,13 +221,13 @@
   cursor: pointer;
 }
 
-/* .button__text {
+.button__text {
   font-size: 14px;
   font-family: var(--accent-font), sans-serif;
   color: var(--mix-blend-color);
-  mix-blend-mode: difference;
   font-weight: 400;
   font-style: normal;
+  mix-blend-mode: difference;
   line-height: 12.6px;
 }
 
@@ -251,7 +239,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 12.6px;
-} */
+}
 
 .floppy {
   fill: var(--mix-blend-color);
@@ -297,7 +285,7 @@
 }
 
 .button-remember::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -399,7 +387,7 @@
 }
 
 .button-save::before {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   display: block;
